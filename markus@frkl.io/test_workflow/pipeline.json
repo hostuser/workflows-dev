@@ -1,0 +1,226 @@
+{
+  "constants": {},
+  "defaults": {},
+  "pipeline_name": "test_workflow",
+  "steps": [
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "import_the_first_tihng",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "I have:\n- this\n- and that\n- and also, maybe this"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "A bigger thing."
+          }
+        },
+        "desc": "Nah"
+      },
+      "is_resolved": false,
+      "step_id": "import_the_first_tihng",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "import_the_first_tihng",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "I have:\n- this\n- and that\n- and also, maybe this"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A bigger thing."
+            }
+          },
+          "desc": "Nah"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "I have:\n- this\n- and that\n- and also, maybe this"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A bigger thing."
+            }
+          },
+          "title": "import_the_first_tihng",
+          "desc": "Nah"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "I have:",
+              "doc": "- this\n- and that\n- and also, maybe this"
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "A bigger thing.",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    },
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "filter_the_bigger_thing",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "The thing from above"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "the filtered thing"
+          }
+        },
+        "desc": "Just a filter"
+      },
+      "is_resolved": false,
+      "step_id": "filter_the_bigger_thing",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "filter_the_bigger_thing",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "The thing from above"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "the filtered thing"
+            }
+          },
+          "desc": "Just a filter"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "The thing from above"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "the filtered thing"
+            }
+          },
+          "title": "filter_the_bigger_thing",
+          "desc": "Just a filter"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "The thing from above",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "the filtered thing",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    }
+  ],
+  "input_aliases": {
+    "import_the_first_tihng.default": "import_the_first_tihng__default",
+    "filter_the_bigger_thing.default": "filter_the_bigger_thing__default"
+  },
+  "output_aliases": {
+    "import_the_first_tihng.default": "import_the_first_tihng__default",
+    "filter_the_bigger_thing.default": "filter_the_bigger_thing__default"
+  },
+  "doc": {
+    "description": "A thing to do a thing with input things.",
+    "doc": "## Research Questions\nThe general nature of things."
+  },
+  "context": {
+    "authors": [
+      "markus@frkl.io"
+    ]
+  }
+}
