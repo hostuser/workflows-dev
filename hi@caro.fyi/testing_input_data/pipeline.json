@@ -1,0 +1,123 @@
+{
+  "constants": {},
+  "defaults": {},
+  "pipeline_name": "testing_input_data",
+  "steps": [
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "step_1",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": ""
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": ""
+          }
+        },
+        "desc": ""
+      },
+      "is_resolved": false,
+      "step_id": "step_1",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "step_1",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": ""
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": ""
+            }
+          },
+          "desc": ""
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": ""
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": ""
+            }
+          },
+          "title": "step_1",
+          "desc": ""
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "-- n/a --",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "-- n/a --",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    }
+  ],
+  "input_aliases": {
+    "step_1.default": "step_1__default"
+  },
+  "output_aliases": {
+    "step_1.default": "step_1__default"
+  },
+  "doc": {
+    "description": "put some files in github",
+    "doc": "## Research Questions\nDoes this key work with git LFS?"
+  },
+  "context": {
+    "authors": [
+      "hi@caro.fyi"
+    ]
+  }
+}
