@@ -1,0 +1,329 @@
+{
+  "constants": {},
+  "defaults": {},
+  "pipeline_name": "cut_point_ranking",
+  "steps": [
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "load_csv_of_interactions_for_a_network",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "Epistolary data in a csv ('source' and 'target' columns) and node identifiers"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "A network object, made up from the node and edges tables"
+          }
+        },
+        "desc": "Using networkx to create a graph from an uploaded csv in python"
+      },
+      "is_resolved": false,
+      "step_id": "load_csv_of_interactions_for_a_network",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "load_csv_of_interactions_for_a_network",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "Epistolary data in a csv ('source' and 'target' columns) and node identifiers"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A network object, made up from the node and edges tables"
+            }
+          },
+          "desc": "Using networkx to create a graph from an uploaded csv in python"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "Epistolary data in a csv ('source' and 'target' columns) and node identifiers"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A network object, made up from the node and edges tables"
+            }
+          },
+          "title": "load_csv_of_interactions_for_a_network",
+          "desc": "Using networkx to create a graph from an uploaded csv in python"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "Epistolary data in a csv ('source' and 'target' columns) and node identifiers",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "A network object, made up from the node and edges tables",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    },
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "identify_active_nodes",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "The whole network, including nodes that have zero interactions (are not connected to anyone else)"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "A filtered network that only contains nodes that have interactions"
+          }
+        },
+        "desc": "Networkx"
+      },
+      "is_resolved": false,
+      "step_id": "identify_active_nodes",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "identify_active_nodes",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "The whole network, including nodes that have zero interactions (are not connected to anyone else)"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A filtered network that only contains nodes that have interactions"
+            }
+          },
+          "desc": "Networkx"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "The whole network, including nodes that have zero interactions (are not connected to anyone else)"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A filtered network that only contains nodes that have interactions"
+            }
+          },
+          "title": "identify_active_nodes",
+          "desc": "Networkx"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "The whole network, including nodes that have zero interactions (are not connected to anyone else)",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "A filtered network that only contains nodes that have interactions",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    },
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "cut_point_list",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "The network graph"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "A list of all nodes that are cut-points"
+          }
+        },
+        "desc": "Networkx (articulation list)"
+      },
+      "is_resolved": false,
+      "step_id": "cut_point_list",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "cut_point_list",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "The network graph"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A list of all nodes that are cut-points"
+            }
+          },
+          "desc": "Networkx (articulation list)"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "The network graph"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "A list of all nodes that are cut-points"
+            }
+          },
+          "title": "cut_point_list",
+          "desc": "Networkx (articulation list)"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "The network graph",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "A list of all nodes that are cut-points",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    }
+  ],
+  "input_aliases": {
+    "load_csv_of_interactions_for_a_network.default": "load_csv_of_interactions_for_a_network__default",
+    "identify_active_nodes.default": "identify_active_nodes__default",
+    "cut_point_list.default": "cut_point_list__default"
+  },
+  "output_aliases": {
+    "load_csv_of_interactions_for_a_network.default": "load_csv_of_interactions_for_a_network__default",
+    "identify_active_nodes.default": "identify_active_nodes__default",
+    "cut_point_list.default": "cut_point_list__default"
+  },
+  "doc": {
+    "description": "Identifies cut-points and intermediaries in a network",
+    "doc": "## Research Questions\nIn a network, who is 'important' based whether they connect different sections or communities, or whether they are disruptive to effective communications?"
+  },
+  "context": {
+    "authors": [
+      "caitlin.burge@uni.lu"
+    ]
+  }
+}
