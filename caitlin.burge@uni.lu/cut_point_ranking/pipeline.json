@@ -305,17 +305,120 @@
         "description": "-- n/a --",
         "doc": null
       }
+    },
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "identify_intermediaries",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "the network graph"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "a list of all actors that are intermediaries, ranked by their importance"
+          }
+        },
+        "desc": "networkx (betweenness centrality) and code for ranking these scores"
+      },
+      "is_resolved": false,
+      "step_id": "identify_intermediaries",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "identify_intermediaries",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "the network graph"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "a list of all actors that are intermediaries, ranked by their importance"
+            }
+          },
+          "desc": "networkx (betweenness centrality) and code for ranking these scores"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "the network graph"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "a list of all actors that are intermediaries, ranked by their importance"
+            }
+          },
+          "title": "identify_intermediaries",
+          "desc": "networkx (betweenness centrality) and code for ranking these scores"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "the network graph",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": "__not_set__",
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "a list of all actors that are intermediaries, ranked by their importance",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
     }
   ],
   "input_aliases": {
     "load_csv_of_interactions_for_a_network.default": "load_csv_of_interactions_for_a_network__default",
     "identify_active_nodes.default": "identify_active_nodes__default",
-    "cut_point_list.default": "cut_point_list__default"
+    "cut_point_list.default": "cut_point_list__default",
+    "identify_intermediaries.default": "identify_intermediaries__default"
   },
   "output_aliases": {
     "load_csv_of_interactions_for_a_network.default": "load_csv_of_interactions_for_a_network__default",
     "identify_active_nodes.default": "identify_active_nodes__default",
-    "cut_point_list.default": "cut_point_list__default"
+    "cut_point_list.default": "cut_point_list__default",
+    "identify_intermediaries.default": "identify_intermediaries__default"
   },
   "doc": {
     "description": "Identifies cut-points and intermediaries in a network",
