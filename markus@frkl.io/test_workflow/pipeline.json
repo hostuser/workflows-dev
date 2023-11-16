@@ -76,7 +76,7 @@
           "default": {
             "type": "any",
             "type_config": {},
-            "default": "__not_set__",
+            "default": null,
             "optional": true,
             "is_constant": false,
             "doc": {
@@ -89,7 +89,7 @@
           "default": {
             "type": "any",
             "type_config": {},
-            "default": "__not_set__",
+            "default": null,
             "optional": true,
             "is_constant": false,
             "doc": {
