@@ -11,17 +11,17 @@
           "default": {
             "type": "any",
             "optional": "true",
-            "doc": ""
+            "doc": "asdf"
           }
         },
         "outputs_schema": {
           "default": {
             "type": "any",
             "optional": "true",
-            "doc": ""
+            "doc": "asdf"
           }
         },
-        "desc": ""
+        "desc": "asdf"
       },
       "is_resolved": false,
       "step_id": "ysy",
@@ -33,17 +33,17 @@
             "default": {
               "type": "any",
               "optional": "true",
-              "doc": ""
+              "doc": "asdf"
             }
           },
           "outputs_schema": {
             "default": {
               "type": "any",
               "optional": "true",
-              "doc": ""
+              "doc": "asdf"
             }
           },
-          "desc": ""
+          "desc": "asdf"
         },
         "is_resolved": false
       },
@@ -59,18 +59,18 @@
             "default": {
               "type": "any",
               "optional": "true",
-              "doc": ""
+              "doc": "asdf"
             }
           },
           "outputs_schema": {
             "default": {
               "type": "any",
               "optional": "true",
-              "doc": ""
+              "doc": "asdf"
             }
           },
           "title": "ysy",
-          "desc": ""
+          "desc": "asdf"
         },
         "inputs_schema": {
           "default": {
@@ -80,7 +80,7 @@
             "optional": true,
             "is_constant": false,
             "doc": {
-              "description": "-- n/a --",
+              "description": "asdf",
               "doc": null
             }
           }
@@ -93,7 +93,108 @@
             "optional": true,
             "is_constant": false,
             "doc": {
-              "description": "-- n/a --",
+              "description": "asdf",
+              "doc": null
+            }
+          }
+        }
+      },
+      "doc": {
+        "description": "-- n/a --",
+        "doc": null
+      }
+    },
+    {
+      "module_type": "dummy",
+      "module_config": {
+        "title": "asdf",
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "asdf"
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "optional": "true",
+            "doc": "asdfsdfa"
+          }
+        },
+        "desc": "asdfsdf"
+      },
+      "is_resolved": false,
+      "step_id": "asdf",
+      "manifest_src": {
+        "module_type": "dummy",
+        "module_config": {
+          "title": "asdf",
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "asdf"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "asdfsdfa"
+            }
+          },
+          "desc": "asdfsdf"
+        },
+        "is_resolved": false
+      },
+      "input_links": {},
+      "module_details": {
+        "python_class_name": "Dummymodule",
+        "python_module_name": "kiara_plugin.streamlit.modules",
+        "full_name": "kiara_plugin.streamlit.modules.Dummymodule",
+        "module_config": {
+          "constants": {},
+          "defaults": {},
+          "inputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "asdf"
+            }
+          },
+          "outputs_schema": {
+            "default": {
+              "type": "any",
+              "optional": "true",
+              "doc": "asdfsdfa"
+            }
+          },
+          "title": "asdf",
+          "desc": "asdfsdf"
+        },
+        "inputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": null,
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "asdf",
+              "doc": null
+            }
+          }
+        },
+        "outputs_schema": {
+          "default": {
+            "type": "any",
+            "type_config": {},
+            "default": null,
+            "optional": true,
+            "is_constant": false,
+            "doc": {
+              "description": "asdfsdfa",
               "doc": null
             }
           }
@@ -106,10 +207,12 @@
     }
   ],
   "input_aliases": {
-    "ysy.default": "ysy__default"
+    "ysy.default": "ysy__default",
+    "asdf.default": "asdf__default"
   },
   "output_aliases": {
-    "ysy.default": "ysy__default"
+    "ysy.default": "ysy__default",
+    "asdf.default": "asdf__default"
   },
   "doc": {
     "description": "xxx",
